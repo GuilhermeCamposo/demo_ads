@@ -34,7 +34,7 @@
 ===  How to run the playbook
 
 ----
-ansible-playbook -e token=${token} -e server=${server} -e github_pat=${github_pat}  playbook.yml
+ansible-playbook -e token=${token} -e server=${server} -e aws_ec2_access_key=${AWS_ACCESS_KEY_ID} -e aws_ec2_secret_key=${AWS_SECRET_ACCESS_KEY} -e github_pat=${github_pat}  playbook.yml
 ----
 
 === Running parts of the playbook
@@ -42,7 +42,7 @@ ansible-playbook -e token=${token} -e server=${server} -e github_pat=${github_pa
 This playbook has https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_tags.html[tags] configured. To run a single role or selected roles you can:
 
 ----
-ansible-playbook -e token=${token} -e server=${server} -e aws_ec2_access_key=${AWS_ACCESS_KEY_ID} -e aws_ec2_secret_key=${AWS_SECRET_ACCESS_KEY} --tags "tpa"  playbook.yml
+ansible-playbook  --tags "tpa"  playbook.yml
 ----
 
 == Testing

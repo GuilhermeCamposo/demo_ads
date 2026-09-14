@@ -74,7 +74,7 @@
     aws_access_key: "{{ aws_ec2_access_key }}"
     aws_secret_key: "{{ aws_ec2_secret_key }}"
     region: "{{ aws_region }}"
-    name: "{{ s3_bucket_name }}"
+    name: "{{ tpa_s3_bucket_name }}"
     state: present
 
 - name: Evaluate Postgresdb instance

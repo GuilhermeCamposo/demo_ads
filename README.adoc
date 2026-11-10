@@ -8,13 +8,13 @@
 
 == What is available?
 
-. Trusted Profile Analyzer 2.2
-. Trusted Artifact Signer 1.3
-. Developer Hub 1.9
+. Trusted Profile Analyzer 2.2 [needs update to 3.1]
+. Trusted Artifact Signer 1.5
+. Developer Hub 1.9 [needs update to 1.10]
 . Red Hat build of Keycloak v26
-. Tekton Pipelines 1.21
-. ArgoCD GitOps 1.19
-. Advanced Cluster Security
+. Tekton Pipelines 1.21 [needs update to 1.24]
+. ArgoCD GitOps 1.19. [needs update to 1.22]
+. Advanced Cluster Security [needs to pin version rhacs-5.0]
 . Devspaces - stable channel - last tested with 3.26.x
 
 == ADS Installation

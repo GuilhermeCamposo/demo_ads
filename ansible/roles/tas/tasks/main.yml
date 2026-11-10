@@ -30,18 +30,15 @@
   retries: 10
   delay: 30
 
-- name: Wait for TAS project
-  kubernetes.core.k8s_info:
+- name: Evaluate Namespace trusted-artifact-signer
+  kubernetes.core.k8s:
     api_key: '{{ token }}'
     host: '{{ server }}'
-    validate_certs: '{{ verify_tls }}'
-    api_version: project.openshift.io/v1
-    kind: Project
+    validate_certs: false
+    api_version: v1
+    kind: Namespace
     name: trusted-artifact-signer
-  register: tas_project
-  until: tas_project.resources | list | length == 1
-  retries: 10
-  delay: 30
+    state: present
 
 - name: Evaluate Securesign instance
   kubernetes.core.k8s:

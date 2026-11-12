@@ -58,7 +58,7 @@
         name: rhtpa-operator
         namespace: '{{ tpa_project }}'
       spec:
-        channel: stable-v1.1
+        channel: '{{ tpa_channel }}'
         name: rhtpa-operator
         installPlanApproval: Automatic
         source: redhat-operators

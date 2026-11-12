@@ -1,3 +1,4 @@
+rhdh_channel: fast-2.1
 rhdh_sa_name: local-cluster
 rhdh_secret_name: secrets-rhdh
 rhdh_cm_name: app-config-rhdh

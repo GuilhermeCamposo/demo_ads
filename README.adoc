@@ -8,9 +8,9 @@
 
 == What is available?
 
-. Trusted Profile Analyzer 2.2 [needs update to 3.1]
+. Trusted Profile Analyzer 3.1
 . Trusted Artifact Signer 1.5
-. Developer Hub 1.9 [needs update to 1.10]
+. Developer Hub 2.1
 . Red Hat build of Keycloak v26
 . Tekton Pipelines 1.24
 . ArgoCD GitOps 1.22

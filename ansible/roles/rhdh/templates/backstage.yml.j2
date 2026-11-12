@@ -1,4 +1,4 @@
-apiVersion: rhdh.redhat.com/v1alpha3
+apiVersion: rhdh.redhat.com/v1alpha5
 kind: Backstage
 metadata:
   name: developer-hub
@@ -26,7 +26,6 @@ spec:
     extraEnvs:
       secrets:
          - name: {{ rhdh_secret_name }}
-    replicas: 1
     route:
       enabled: true
   database:

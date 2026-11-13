@@ -5,6 +5,9 @@ metadata:
     app: sso
   name: keycloak
 spec:
+  additionalOptions:
+    - name: log-level
+      value: 'org.keycloak:INFO'
   hostname:
     hostname: keycloak-{{ keycloak_project }}.{{ route_subdomain }}
   http:

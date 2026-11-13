@@ -1,0 +1,36 @@
+= TODO
+
+List of things that need to be implemented or fixed in the future:
+
+== Update Feedback plugin to the new Backstage version
+
+----
+      - package: oci://quay.io/gcamposo/backstage-community-plugin-entity-feedback:0.12.0!backstage-community-plugin-entity-feedback
+        enabled: true
+        pluginConfig:
+          dynamicPlugins:
+            frontend:
+              backstage-community.plugin-entity-feedback:
+                entityTabs:
+                  - mountPoint: entity.page.feedback
+                    path: /feedback
+                    title: Feedback
+                mountPoints:
+                  - config:
+                      layout:
+                        gridColumn: 1 / -1
+                    importName: StarredRatingButtons
+                    mountPoint: entity.page.feedback/cards
+                  - config:
+                      layout:
+                        gridColumn: 1 / -1
+                    importName: StarredRatingsTable
+                    mountPoint: entity.page.feedback/cards
+                  - config:
+                      layout:
+                        gridColumn: 1 / -1
+                    importName: EntityFeedbackResponseContent
+                    mountPoint: entity.page.feedback/cards
+      - package: oci://quay.io/gcamposo/backstage-community-plugin-entity-feedback-backend:0.14.0!backstage-community-plugin-entity-feedback-backend
+        enabled: true
+----
